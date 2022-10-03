@@ -1,0 +1,21 @@
+print(20*"=")
+print("KALKULATOR SEDERHANA")
+print(20*"=")
+angka1 = float(input("Masukan Angka Pertama ="))
+operator = input(f"Pilih Operator(+, - ,*, /)=")
+angka2 = float(input("Masukan Angka Kedua ="))
+if operator == "+":
+     hasil = angka1 + angka2
+     print(hasil)
+elif operator == "-":
+    hasil = angka1 - angka2
+    print(hasil)
+elif operator == "*":
+    hasil = angka1 * angka2
+    print(hasil)
+elif operator == "/":
+    hasil = angka1 / angka2
+    print(hasil)
+print(26*"=")
+print("Terima Kasih Telah Mencoba")
+print(26*"=")
