@@ -1,0 +1,11 @@
+nama = input("Masukan Nama Anda =")
+if nama=="Bayu":
+    print("Hai ganteng")
+elif nama=="Selly":
+    print(f"Hai Cantikk :)")
+elif nama=="Naruto":
+    print(f"Hai {nama} kamu hebat")
+else:
+    print("Maaf saya tidak kenal anda?")
+print(f"Terimakasih {nama}")
+    
