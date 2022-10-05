@@ -1,3 +1,0 @@
-nama = range(1,11)
-for a in nama :
-    print(a)
