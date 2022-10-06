@@ -1,0 +1,26 @@
+print(23*"=")
+baris = int(input("Masukan Banyak Baris ="))
+print(23*"=")
+a = 1
+for i in range(baris):
+    print(a*"*")
+    a +=1
+a = baris
+for i in range(baris):
+    print(a*"*")
+    a -=1
+    
+print(23*"=")
+
+b = 1
+while True:
+    print(b*"*")
+    b +=1
+    if b > baris:
+        break
+b = baris
+while True:
+    print(b*"*")
+    b -=1
+    if b > baris:
+        break
