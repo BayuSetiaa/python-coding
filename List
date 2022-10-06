@@ -1,0 +1,14 @@
+data = [a for a in range(1,11)]
+b = list(data)
+print(b)
+data = [a**2 for a in range(1,11)]
+b = list(data)
+print(b)
+
+print(20*"=")
+
+data2 = [i for i in range(1,11) if i%2 ==1]
+print(data2)
+
+data3 = [i for i in range(1,11) if i%2 !=1]
+print(data3)
