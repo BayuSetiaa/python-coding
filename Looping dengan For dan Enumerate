@@ -1,0 +1,20 @@
+print(33*"=")
+print("CARA LAMA DAN PANJANG")
+print(33*"=")
+nama =["Bayu","Selly","Naruto","Hima"]
+for a in nama:
+    print(f"Nama = {a}")
+angka = [1,2,3,4,5,6,7,8,9]
+for a in angka:
+    print(f"Angka = {a}")
+print(33*"=")
+print("CARA SINGKAT LOOPING DENGAN LIST")
+print(33*"=")
+angka = [1,2,3,4,5,6,7,8,9]
+[print(f"Angkanya adalah = {a}") for a in angka]
+print(33*"=")
+print("CARA MENGGUNAKAN ENUMERATE")
+print(33*"=")
+angka = [1,2,3,4,5,6,7,8,9]
+for index,a in enumerate(angka):
+    print(f"indexnya = {index},angkanya = {a}")
