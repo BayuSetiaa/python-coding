@@ -1,0 +1,14 @@
+data = {
+    "ak":"Saya",
+    "BS":"Bayu Setia",
+    "a":100,
+    "b":"Selly Pikauli",
+    "c":"Cinta",
+    "d":True
+}
+print(data["ak"])
+print(data["BS"])
+print(data["c"])
+print(data["b"])
+print(data["a"])
+print(data["d"])
