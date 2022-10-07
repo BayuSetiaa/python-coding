@@ -1,0 +1,9 @@
+data1 =["bayu","naruto"]
+data2 = ["saskeh","hima"]
+data = [data1,data2]
+print(data)
+from copy import deepcopy
+hasil = deepcopy(data)
+print(hasil)
+data[0][0] = "dattebayo"
+print(data)
