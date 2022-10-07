@@ -1,0 +1,16 @@
+print(25*"=")
+print("MASUKAN DATA BUKU")
+print(25*"=")
+list_buku = []
+while True:
+    buku = input("Judul Buku\t\t = ")
+    penulis = input("Penulis Buku\t = ")
+    data_buku =[buku,penulis]
+    list_buku.append(data_buku)
+    print("\n\n",25*"=")
+    for index, buku in enumerate(list_buku):
+        print(f"{index+1} | {buku[0]} | {buku[1]}")
+    lanjut = input(f"Tambahkan Buku lain (Ya/Tidak) = ")
+    if lanjut=="Tidak":
+        break
+print(25*"=")
