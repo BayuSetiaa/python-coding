@@ -1,0 +1,9 @@
+peserta1 = ["Bayu",14,2004]
+peserta2 = ["Selly",13,2004]
+peserta3 = ["Naruto",23,2003]
+list_peserta =[peserta1,peserta2,peserta3]
+for peserta in list_peserta:
+    print(f"Nama\t\t ={peserta[0]}")
+    print(f"Tanggal\t\t ={peserta[1]}")
+    print(f"Tahun\t\t ={peserta[2]}\n")
+    
