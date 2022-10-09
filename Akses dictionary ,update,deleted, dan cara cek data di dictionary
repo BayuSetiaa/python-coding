@@ -1,0 +1,20 @@
+data = {
+    "ak":"Saya",
+    "BS":"Bayu Setia",
+    "a":100,
+    "b":"Selly Pikauli",
+    "c":"Cinta",
+    "d":True
+}
+panjang_data = len(data)
+print(f" Panjang Datanya adalah = {panjang_data}")
+a = "BS"
+cek = a in data
+print(f"Apakah Ada {a} di data = {cek}")
+print(data.get("b"))
+data.update({"sel":"Love you"})
+print(data)
+data.update({"a":"200"})
+print(data)
+del data["d"]
+print(data)
