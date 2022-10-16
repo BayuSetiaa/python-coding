@@ -1,0 +1,22 @@
+def sapaan(nama = "Cantikk"):
+    print(f"Hallo {nama}")
+sapaan("Bayu")
+sapaan()
+print(20*"=")
+def nanya_kabar(nama = "Siapa nama Ada broo",pesan = "Gimana Kabar Mu?"):
+    print(f"Hai {nama},{pesan}")
+nanya_kabar("Bayu")
+nanya_kabar("Hima","Kamu Cantik Sekalee")
+nanya_kabar()
+print(20*"=")
+def hitung_pangkat (angka,pangkat):
+    hasil = angka**pangkat
+    return hasil
+print(hitung_pangkat(2,3))
+print(hitung_pangkat(angka=3,pangkat=2))
+print(20*"=")
+def penjumlahan(a=1,b=2,c=3,d=4):
+    hasil = a+b+c+d
+    return hasil
+print(penjumlahan())
+print(penjumlahan(d=10))
