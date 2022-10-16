@@ -1,0 +1,29 @@
+def kuadrat(angka):
+    hasil = angka**2
+    return hasil
+print(kuadrat(4))
+print(f"hasilnya = {kuadrat(3)}")
+print(20*"=")
+x = 6 + kuadrat(2)
+a = kuadrat(3) + kuadrat(5)
+print(x)
+print(a)
+print(20*"=")
+def perkalian(angka1,angka2):
+    return angka1 * angka2
+print(perkalian(2,3))
+print("atau")
+a = perkalian(2,3)
+print(a)
+print(20*"=")
+def operasi_matematika(angka1,angka2):
+    tambah = angka1+angka2
+    kurang = angka1-angka2
+    kali = angka1*angka2
+    bagi = angka1/angka2
+    return tambah,kurang,kali,bagi
+p,q,r,s =operasi_matematika(4,2)
+print(f"Hasilnya Adalah = {p}")
+print(f"Hasilnya Adalah = {q}")
+print(f"Hasilnya Adalah = {r}")
+print(f"Hasilnya Adalah = {s}")
