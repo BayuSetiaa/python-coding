@@ -1,0 +1,17 @@
+def nama(nama):
+    print(f"Hallo {nama} kamu sangat Ganteng Sekaleee")
+nama("Bayu Setia")
+print(20*"=")
+def tambah(angka1,angka2):
+    hasil = angka1 + angka2
+    print(f"{angka1} + {angka2} = {hasil}")
+tambah(5,5)
+tambah(6,2)
+print(20*"=")
+def absen(mahasiswa):
+    data = mahasiswa.copy()
+    for a in data:
+        print(f"Saya {a} Hadir Buk!!!")
+    
+nama_nama = ["Bayu","Naruto","Sasuke","Hima"]
+absen(nama_nama)
