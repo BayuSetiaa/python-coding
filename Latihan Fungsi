@@ -13,16 +13,19 @@ def menghitung_luas(panjang,lebar):
     return panjang*lebar
 def menghitung_keliling(panjang,lebar):
     return 2*(panjang+lebar)
+def tampil(pesan,isi):
+    print(f"Hasil Perhitungan {pesan} Adalah = {isi}")
 while True:
     utama()
     a,b = input_nilai()
     c = menghitung_luas(a,b)
     d = menghitung_keliling(a,b)
-    print(f"Luasnya Adalah = {c}")
-    print(f"Kelilingnya Adalah = {d}")
+    tampil("Luasnya",c)
+    tampil("Keliling",d)
     lanjut_program =input("Mau Lanjut atau Tidak (yes/no) = ")
     if lanjut_program == "no":
         break
 print(30*"=")
 print("TERIMAKASIH")
 print(30*"=")
+#CATATAN KALAU ERROR IMPORT OS SAMA OS.SYSTEM("CLS(WINDOWS)/CLEAR( BUAT MAC)") DIHAPUS AJA
