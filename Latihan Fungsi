@@ -1,0 +1,28 @@
+import os
+def utama():
+    os.system("cls")
+    print(30*"=")
+    print("PROGRAM MENGHITUNG LUAS")
+    print("DAN KELILING PERSEGI PANJANG")
+    print(30*"=")
+def input_nilai():
+    panjang = int(input("Masukan Nilai Panjang = "))
+    lebar = int(input("Masukan Nilai Lebar = "))
+    return panjang,lebar
+def menghitung_luas(panjang,lebar):
+    return panjang*lebar
+def menghitung_keliling(panjang,lebar):
+    return 2*(panjang+lebar)
+while True:
+    utama()
+    a,b = input_nilai()
+    c = menghitung_luas(a,b)
+    d = menghitung_keliling(a,b)
+    print(f"Luasnya Adalah = {c}")
+    print(f"Kelilingnya Adalah = {d}")
+    lanjut_program =input("Mau Lanjut atau Tidak (yes/no) = ")
+    if lanjut_program == "no":
+        break
+print(30*"=")
+print("TERIMAKASIH")
+print(30*"=")
