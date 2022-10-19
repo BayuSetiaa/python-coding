@@ -1,0 +1,15 @@
+def tambah(*args):
+    angka_pertama = 0
+    for a in args:
+        angka_pertama += a
+    return angka_pertama
+hasil = tambah(2,4,3)
+print(f"Hasil Tambahnya adalah = {hasil}")
+print(f"Hasilnya adalah = {tambah(4,2,5)}")
+print(30*"=")
+def tambah(*data):
+    output = 0
+    for angka in data:
+        output += angka
+    return output
+print(f"Hasilnya Adalah = {tambah(1,2,3,4,5)}")
