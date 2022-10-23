@@ -1,0 +1,27 @@
+Package = folder, cara membuatnya klik new folder
+module = file, cara membuatnya klik new file
+
+Cara akses package = import nama package.nama module
+ex :
+    package = sains
+    module = matematika (ada fungsi= tambah,kali,pangkat ,dll)
+    
+    cara aksesnya import sains.matematika
+    cara penggunanya :
+        hasil_tambah = sains.matematika.tambah(5,7)
+        print(hasil_tambah)
+        
+CARA SIMPEL LAINYA YG LEBIH SINGKAT TANPA MENGGUNAKAN (SAINS.) TERLEBIH DAHULU
+
+DENGAN CARA :
+    from sains import matematika
+    nanti cara penggunaanya:
+        hasil_tambah = matematika.tambah(5,7)
+        print(hasil_tambah)
+        
+ATAU LEBIH SINGKAT LAGI DENGAN CARA :
+    from sains.matematika import tambah
+    nanti cara penggunaanya:
+        hasil_tambah =tambah(5,7)
+        print(hasil_tambah)
+        
