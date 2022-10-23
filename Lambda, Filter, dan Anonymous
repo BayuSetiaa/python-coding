@@ -1,0 +1,35 @@
+kuadrat = lambda angka : angka**2
+print(kuadrat(3))
+print(f"Hasil Kuadrat Dengan Lambda adalah = {kuadrat(5)}")
+print(30*"=")
+print("Atau")
+print(30*"=")
+bayu = lambda a : a**2
+print(bayu(2))
+print(f"Hasil Kuadrat Dengan Lambda adalah = {bayu(4)}")
+print(30*"=")
+print("Atau")
+print(30*"=")
+pangkat = lambda ang,pang : ang**pang
+print(pangkat(2,3))
+print(f"Hasil Kuadrat Dengan Lambda adalah = {pangkat(2,4)}")
+print(30*"=")
+print("FILTER")
+print(30*"=")
+data_angka = [1,2,3,4,5,6,7,8,9,10]
+data_ganjil = list(filter(lambda a : a%2 != 0,data_angka))
+print(data_ganjil)
+data_genap = list(filter(lambda a : a%2 == 0,data_angka))
+print(data_genap)
+kelipatan = list(filter(lambda a : a%3 == 0,data_angka))
+print(kelipatan)
+print(30*"=")
+print("ANONYMOUS")
+print(30*"=")
+def pangkat(n):
+    return lambda angka:angka**n
+pangkat_angka = pangkat(2)
+print(pangkat_angka(5))
+print("ATAU")
+print(pangkat(3)(2))
+
