@@ -1,0 +1,16 @@
+data_global = "Bayu Setia"
+a = 100 #ini juga data global
+def data():
+    print(f"Hai Gantengku {data_global} Semangattt Onichannn")
+    print(a)
+data()
+print(30*"=")
+
+data_angka = 100
+def ubah(angka_baru):
+    global data_angka
+    data_angka = angka_baru
+print(data_angka)
+print("DIUBAH")
+ubah(60)
+print(data_angka)
