@@ -2,9 +2,9 @@ import os
 os.system("cls")
 def utama():
     print("PROGRAM OPERASI MATEMATIKA")   
-    print("SEDERHANA ALA THE REAL SULTAN FREEF IRE")
+    print("SEDERHANA ALA THE REAL SULTAN FREE FIRE")
     print(40*"=")
-def input_nilai(angka1,angka2):
+def input_nilai():
     angka1 = int(input("Masukan Angka Pertama = "))
     angka2 = int(input("Masukan Angka Kedua = "))
     return angka1,angka2
@@ -15,16 +15,16 @@ def kurang(angka1,angka2):
 def kali(angka1,angka2):
     return angka1*angka2
 def bagi(angka1,angka2):
-    return angka1,angka2
+    return angka1/angka2
 def tampil(pesan,isi):
     print(f"Hasil Perhitungan {pesan} adalah = {isi}")
 while True:
     utama()
     a,b = input_nilai()
     p = tambah(a,b)
-    q = tambah(a,b)
-    r = tambah(a,b)
-    s = tambah(a,b)
+    q = kurang(a,b)
+    r = kali(a,b)
+    s = bagi(a,b)
     tampil("Tambah",p)
     tampil("Kurang",q)
     tampil("Kali",r)
