@@ -1,0 +1,44 @@
+import os
+os.system("cls")
+print(30*"=")
+print("REKURSIF FAKTORIAL")
+
+def faktorial(n):
+    if n==1:
+        return n
+    else:
+        return n*faktorial(n-1)
+print(faktorial(4))
+
+print(30*"=")
+print("REKURSIF FIBONACCI")
+
+def fibonacci(n):
+    if n == 1:
+        return n
+    else:
+        return n+fibonacci(n-1)
+print(fibonacci(3))
+
+print(30*"=")
+print("REKURSIF PERPANGKATAN")
+
+def perpangkatan(bilangan,pangkat):
+    if pangkat>1:
+        return bilangan*perpangkatan(bilangan,pangkat-1)
+    else:
+        return bilangan
+print(perpangkatan(10,3))
+
+print(30*"=")
+print("REKURSIF PERPANGKATAN CARA BS")
+
+def perpangkatan(bilangan,pangkat):
+    if pangkat<=1:
+        return bilangan
+    else:
+        return bilangan*perpangkatan(bilangan,pangkat-1)
+print(perpangkatan(10,3))
+
+
+
