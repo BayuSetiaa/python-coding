@@ -1,0 +1,26 @@
+import os
+os.system("cls")
+
+print("SOAL 1")
+def anu(n):
+    if n==0:
+        return 0
+    else:
+        return anu(n-1)+2
+print(anu(4))
+
+print("SOAL 2")
+def p(a,n):
+    if n==0:
+        return 1
+    else:
+        return a*p(a,n-1)
+print(p(2,3))
+
+print("SOAL 3")
+def r(n): 
+    if n == 1:
+        return -7
+    else:
+        return r(n-1)+12        
+print(r(3))
