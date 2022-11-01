@@ -1,0 +1,10 @@
+import os
+os.system("cls")
+
+l = [["jhon",80],["jhon", 85],["jim",75]]
+jmlh = 0
+for i in l:
+    jmlh = jmlh+i[1]
+print(f"Jumlahnya Adalah = {jmlh}")
+print(f"Rata-Ratanya Adalah = {jmlh/len(l)}")
+
