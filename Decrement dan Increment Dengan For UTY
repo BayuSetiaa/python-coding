@@ -1,0 +1,13 @@
+print(30*"=")
+
+for i in range(5,0,-1):
+    print(i)
+    #cara bacanya 5 itu untuk angka awal yg kita inginkan
+    # 0 itu untuk angka batasnya ,kalau batasnya 0 berati angka terakhir yg kita cetak dalah 1
+    # -1 itu untuk penguranganya ,kalau penguranganya -1 berati 5 -1 =4 dst menjadi 54321, kalau -2 berati 531
+    
+
+print(30*"=")
+
+for i in range(1,6):
+    print(i)
