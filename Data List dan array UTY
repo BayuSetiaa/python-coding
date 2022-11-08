@@ -1,0 +1,129 @@
+import os
+os.system("cls")
+
+print(50*"=")
+print("\U0001F618")
+print("\U0001F917")
+print("\U0001F637")
+print("\U0001F62A")
+print("\U0001F600")
+print(50*"=")
+
+from array import*
+
+print("MATERI DATA ARRAY","\U0001F618")
+print(50*"=")
+
+data = array ("i", [5,4,6,8,7,4,6])
+
+print(data[:5],"\U0001F917")
+
+print(data[5:],"\U0001F637")
+
+print(data[2:5],"\U0001F62A")
+
+data.insert(1,99)
+data.insert(3,100)
+
+print(data,"\U0001F600")
+
+print(50*"=")
+for i in range(len(data)):
+    print(data[i],"\U0001F618")
+    
+print(50*"=")
+
+data[1] = 777
+data.pop(1)  #untuk menghapus
+
+print(data,"\U0001F600")
+print(data,"\U0001F917")
+print(data[-1]) #untuk mengakses data terakhir
+print(data[-4]) #untuk nmengakses data dari belakang
+print(50*"=")
+
+print(25*"\U0001F637")
+print(50*"=")
+print("MATERI DATA LIST","\U0001F618")
+print(50*"=")
+
+
+data1 = ["bayu","woy","cina"]
+print(data1[0])
+print(data1[1])
+print(data1[2])
+print(data1[-1])#untuk akses data dari belakang tanpa ribet pakai -1
+
+print(50*"=")
+#untuk akses data keseluruhan List
+for i in data1:
+    print(i)
+    
+print(50*"=")
+data2 = ["fera","azey","lulu"]
+data2.append("bayu") #untuk menambahkan data baru
+print(data2)
+
+print(50*"=")
+# untuk menambahkan data dengan inputan dari keyboard
+nama = input("Masukan Nama = ")
+if nama == "":
+    print("Data Tidak Boleh Kosong!!")
+else:
+    data2.append(nama)
+    for i in data2:
+        print(i)
+        
+print(50*'=')
+#untuk Menghapus data list
+data3 = ["bayu","sangat","setia"]
+
+data3.remove("bayu")
+
+for i in data3:
+    print(i)
+
+print(50*"=")
+# untuk Menghapus dengan melihat indeks nya
+data4 = ["jeky","jafar","kufur"]
+
+data4.pop(1)
+
+for i in data4:
+    print(i)
+    
+print(50*"=")
+# cara mencari data di LIST
+data5 = ["zafar","kufur","sekali"]
+
+cari = input("Masukan Nama = ")
+
+if cari in data5:
+    print("Data Ditemukan")
+else:
+    print("Data Tidak Ditemukan")
+
+print(50*"=")
+print("cara kedua")
+
+data5 = ["zafar","kufur","sekali"]
+
+cari = input("Masukan Nama = ")
+for i in data5:
+    if cari == i:
+        print("data Ditemukan")
+        
+print(50*"=")
+print("cara ketiga yg lebih kompleks")
+
+data5 = ["zafar","kufur","sekali"]
+
+cari = input("Masukan Nama = ")
+
+for i in range(len(data5)):
+    if cari==data5[i]:
+        print(f"data ditemukan pada urutan ke = {i+1}")
+
+
+
+
