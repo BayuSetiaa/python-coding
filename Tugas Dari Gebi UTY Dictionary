@@ -1,0 +1,56 @@
+import os
+os.system("cls")
+
+barang = {
+    0:{"barang":"Pensil","qty":10,"satuan":"pcs","harga":5000},
+    1:{"barang":"Buku","qty":10,"satuan":"pcs","harga":4000},
+    2:{"barang":"Minyak Goreng","qty":10,"satuan":"ltr","harga":15000},
+    3:{"barang":"Gula","qty":5,"satuan":"kg","harga":6000}
+}
+
+print("DAFTAR BELANJA")
+print(65*"=")
+print("BARANG            QTY SATUAN        HARGA         JUMLAH HARGA")
+print(65*"=")
+
+a = barang[0]["qty"]
+b = barang[0]["harga"]
+
+c = barang[1]["qty"]
+d = barang[1]["harga"]
+
+e = barang[2]["qty"]
+f = barang[2]["harga"]
+
+g = barang[3]["qty"]
+h = barang[3]["harga"]
+
+
+
+def kali(a,b):
+    return a*b
+    
+def kali(c,d):
+    return c*d
+    
+def kali(e,f):
+    return e*f
+    
+def kali(g,h):
+    return g*h
+    
+jumlah = kali(a,b)+kali(c,d)+kali(e,f)+kali(g,h)
+
+    
+print(barang[0]["barang"],"            ",barang[0]["qty"],barang[0]["satuan"],"        ",barang[0]["harga"],"          ",kali(a,b))
+
+print(barang[1]["barang"],"              ",barang[1]["qty"],barang[1]["satuan"],"        ",barang[1]["harga"],"          ",kali(c,d))
+
+print(barang[2]["barang"],"     ",barang[2]["qty"],barang[2]["satuan"],"        ",barang[2]["harga"],"         ",kali(e,f))
+
+print(barang[3]["barang"],"              ",barang[3]["qty"],barang[3]["satuan"],"          ",barang[3]["harga"],"          ",kali(g,h))
+
+
+print(65*"=")
+print("TOTAL","                                             ",jumlah)
+print(65*"=")
