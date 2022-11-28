@@ -1,0 +1,2 @@
+kalau ada suatu data yg double angkanya tpi ingin ditampilkan semuanya(ex : 4,4,4, 4 nya ditampilkan semua) maka gunakan TUPLE()
+Tpi kalau 4 nya cuma dihitung jadi 1 aja (ex : 4,4,4, tpi 4 yng ditampilkan cuma 1 empat saja) maka gunakan SET{}
