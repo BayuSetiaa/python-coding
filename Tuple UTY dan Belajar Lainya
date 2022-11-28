@@ -1,0 +1,52 @@
+import os
+os.system("cls")
+
+print("\U0001F618")
+print("\U0001F917")
+print("\U0001F637")
+print("\U0001F62A")
+print("\U0001F600")
+
+print(35*"=")
+print("DATA TUPLE","\U0001F618")
+print()
+data = (2,3,4,5,6,4)
+
+print(data) #cara akses data semuanya
+print(data[:3],) #cara akses data tertentu 2 sampai 4
+print(data[4:]) #cara akses data tertentu 6 sampai data yg terakhir
+print(data[2:4]) #cara akses data tertentu 4 dan 5
+
+print(35*"-")
+print("DATA DICTIONARY UTY","\U0001F600")
+print()
+data1 = {
+    "nim": 240,
+    "nama": "Bayu Setia"
+}
+
+print(data1["nim"],"\U0001F917")
+print(data1["nama"],"\U0001F637")
+
+print()
+
+data1.update({"usia":18}) # cara menambahkan data
+
+print(data1,"\U0001F62A")
+
+print()
+
+for i in data1:
+    print(i) # cara akses key dengan looping
+    
+print()
+    
+for i in data1:
+    print(data1[i]) # cara akses value nya dengan looping
+    
+print()
+    
+data1["nim"] = 5220411240 # cara update data
+
+print(data1)
+
