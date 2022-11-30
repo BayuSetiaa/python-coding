@@ -1,0 +1,24 @@
+import os
+os.system("cls")
+
+bil = int(input("Masukan Bilangan = "))
+
+if bil % 2 == 1:
+    if bil == 21 or bil == 27:
+        print(bil)
+        bil+=1
+    else:
+        bil += 1
+else:
+    bil += 1
+
+
+while bil <= 100:
+    if bil % 2 == 1:
+        if bil == 21 or bil == 27:
+            print(bil)
+            bil+=1
+        else:
+            bil += 1
+    else:
+        bil += 1
