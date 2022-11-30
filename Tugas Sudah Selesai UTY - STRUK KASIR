@@ -1,0 +1,131 @@
+import os
+os.system("cls")
+
+nama = str(input("Masukan Nama = "))
+print()
+def menu():
+    print(10*"=","Menu Makanan",10*"=")
+    print()
+    print("1. Nasi Goreng  | Rp12.000")
+    print("2. Mie Ayam     | Rp10.000")
+    print("3. Soto Betawi  | Rp10.000")
+    print()
+    print(10*"=","Menu Minuman",10*"=") 
+    print()
+    print("1. Es Jeruk     | Rp5.000")
+    print("2. Es Mangga    | Rp5.000")
+menu()
+print()
+pilih1 = int(input("Masukan Nomor Pilihan Makanan = ")) 
+pilih2 = int(input("Masukan Nomor Pilihan Minuman = "))
+
+jumlah1 = int(input("Masukan Jumlah Makanan = "))
+jumlah2 = int(input("Masukan Jumlah Minuman = "))
+
+harga1 = 12000
+harga2 = 10000
+harga3 = 10000
+harga4 = 5000
+harga5 = 5000
+
+if pilih1 == 1:
+    if pilih2 == 1:
+        totalPesanan1 = harga1 * jumlah1
+        totalPesanan2 = harga4 * jumlah2
+        total = totalPesanan1 + totalPesanan2
+        print("Total Pesanan = ",total)
+        bayar = int(input("Masukan Uang = "))
+        kembalian = bayar-total
+        print(25*"=")
+        print(7*"=","STRUK",11*"=")
+        print(25*"=")
+        print(3*"=","","Nama         :",nama)
+        print(3*"=","Pembelian")
+        print(3*"=","","Makanan      : Nasi Goreng")
+        print(3*"=","","Minuman      : Es Jeruk")
+        print(3*"=","","uang         : ",bayar)
+        print(3*"=","","Kembalian    :",kembalian)
+    if pilih2 == 2:
+        totalPesanan1 = harga1 * jumlah1
+        totalPesanan2 = harga5 * jumlah2
+        total = totalPesanan1 + totalPesanan2
+        print("Total Pesanan = ",total)
+        bayar = int(input("Masukan Uang = "))
+        kembalian = bayar-total
+        print(25*"=")
+        print(7*"=","STRUK",11*"=")
+        print(25*"=")
+        print(3*"=","","Nama         :",nama)
+        print(3*"=","Pembelian")
+        print(3*"=","","Makanan      : Nasi Goreng")
+        print(3*"=","","Minuman      : Es Jeruk")
+        print(3*"=","","uang         : ",bayar)
+        print(3*"=","","Kembalian    :",kembalian)
+elif pilih1 == 2:
+    if pilih2 == 1:
+        totalPesanan1 = harga2 * jumlah1
+        totalPesanan2 = harga4 * jumlah2
+        total = totalPesanan1 + totalPesanan2
+        print("Total Pesanan = ",total)
+        bayar = int(input("Masukan Uang = "))
+        kembalian = bayar-total
+        print(25*"=")
+        print(7*"=","STRUK",11*"=")
+        print(25*"=")
+        print(3*"=","","Nama         :",nama)
+        print(3*"=","Pembelian")
+        print(3*"=","","Makanan      : Mie Ayam")
+        print(3*"=","","Minuman      : Es Jeruk")
+        print(3*"=","","uang         : ",bayar)
+        print(3*"=","","Kembalian    :",kembalian)
+    if pilih2 == 2:
+        totalPesanan1 = harga2 * jumlah1
+        totalPesanan2 = harga5 * jumlah2
+        total = totalPesanan1 + totalPesanan2
+        print("Total Pesanan = ",total)
+        bayar = int(input("Masukan Uang = "))
+        kembalian = bayar-total
+        print(25*"=")
+        print(7*"=","STRUK",11*"=")
+        print(25*"=")
+        print(3*"=","","Nama         :",nama)
+        print(3*"=","Pembelian")
+        print(3*"=","","Makanan      : Mie Ayam")
+        print(3*"=","","Minuman      : Es Mangga")
+        print(3*"=","","uang         : ",bayar)
+        print(3*"=","","Kembalian    :",kembalian)
+elif pilih1 == 3:
+    if pilih2 == 1:
+        totalPesanan1 = harga3 * jumlah1
+        totalPesanan2 = harga4 * jumlah2
+        total = totalPesanan1 + totalPesanan2
+        print("Total Pesanan = ",total)
+        bayar = int(input("Masukan Uang = "))
+        kembalian = bayar-total
+        print(25*"=")
+        print(7*"=","STRUK",11*"=")
+        print(25*"=")
+        print(3*"=","","Nama         :",nama)
+        print(3*"=","Pembelian")
+        print(3*"=","","Makanan      : Soto Betawi")
+        print(3*"=","","Minuman      : Es Jeruk")
+        print(3*"=","","uang         : ",bayar)
+        print(3*"=","","Kembalian    :",kembalian)
+    if pilih2 == 2:
+        totalPesanan1 = harga3 * jumlah1
+        totalPesanan2 = harga5 * jumlah2
+        total = totalPesanan1 + totalPesanan2
+        print("Total Pesanan = ",total)
+        bayar = int(input("Masukan Uang = "))
+        kembalian = bayar-total
+        print(25*"=")
+        print(7*"=","STRUK",11*"=")
+        print(25*"=")
+        print(3*"=","","Nama         :",nama)
+        print(3*"=","Pembelian")
+        print(3*"=","","Makanan      : Soto Betawi")
+        print(3*"=","","Minuman      : Es Mangga")
+        print(3*"=","","uang         : ",bayar)
+        print(3*"=","","Kembalian    :",kembalian)
+else:
+    print("MAAF PILIHAN ANDA TIDAK ADA DI MENU!!!")
