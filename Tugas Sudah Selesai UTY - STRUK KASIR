@@ -45,6 +45,8 @@ if pilih1 == 1:
         print(3*"=","","Minuman      : Es Jeruk")
         print(3*"=","","uang         : ",bayar)
         print(3*"=","","Kembalian    :",kembalian)
+        print(25*"=")
+        print(25*"=")
     if pilih2 == 2:
         totalPesanan1 = harga1 * jumlah1
         totalPesanan2 = harga5 * jumlah2
@@ -61,6 +63,8 @@ if pilih1 == 1:
         print(3*"=","","Minuman      : Es Jeruk")
         print(3*"=","","uang         : ",bayar)
         print(3*"=","","Kembalian    :",kembalian)
+        print(25*"=")
+        print(25*"=")
 elif pilih1 == 2:
     if pilih2 == 1:
         totalPesanan1 = harga2 * jumlah1
@@ -78,6 +82,8 @@ elif pilih1 == 2:
         print(3*"=","","Minuman      : Es Jeruk")
         print(3*"=","","uang         : ",bayar)
         print(3*"=","","Kembalian    :",kembalian)
+        print(25*"=")
+        print(25*"=")
     if pilih2 == 2:
         totalPesanan1 = harga2 * jumlah1
         totalPesanan2 = harga5 * jumlah2
@@ -94,6 +100,8 @@ elif pilih1 == 2:
         print(3*"=","","Minuman      : Es Mangga")
         print(3*"=","","uang         : ",bayar)
         print(3*"=","","Kembalian    :",kembalian)
+        print(25*"=")
+        print(25*"=")
 elif pilih1 == 3:
     if pilih2 == 1:
         totalPesanan1 = harga3 * jumlah1
@@ -111,6 +119,8 @@ elif pilih1 == 3:
         print(3*"=","","Minuman      : Es Jeruk")
         print(3*"=","","uang         : ",bayar)
         print(3*"=","","Kembalian    :",kembalian)
+        print(25*"=")
+        print(25*"=")
     if pilih2 == 2:
         totalPesanan1 = harga3 * jumlah1
         totalPesanan2 = harga5 * jumlah2
@@ -127,5 +137,7 @@ elif pilih1 == 3:
         print(3*"=","","Minuman      : Es Mangga")
         print(3*"=","","uang         : ",bayar)
         print(3*"=","","Kembalian    :",kembalian)
+        print(25*"=")
+        print(25*"=")
 else:
     print("MAAF PILIHAN ANDA TIDAK ADA DI MENU!!!")
