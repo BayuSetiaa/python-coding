@@ -1,0 +1,43 @@
+import os
+os.system("cls")
+
+# Insertion Sort 
+d = [4,2,1,3,5]
+for i in range(1, len(d)):
+    aktif = d[i]
+    j = i - 1
+    while j >= 0 and d[j] > aktif:
+        d[j+1] = d[j]
+        j = j-1
+        d[j+1] = aktif
+print(d)
+
+print()
+
+#function insert sort
+def insert(d):
+    for i in range(1, len(d)):
+        aktif = d[i]
+        j = i - 1
+        while j >= 0 and d[j] > aktif:
+            d[j+1] = d[j]
+            j = j-1
+            d[j+1] = aktif
+    print(d)
+insert([4,2,1,3,5])
+
+print()
+
+#Linear Search
+data1 = [4,2,1,3,5]
+cari = 5
+i = 0
+found = False
+while i < len(data1) and not found:
+    if data1[i] == cari:
+        found = True
+    else:
+        i += 1
+print(found, i)
+
+
