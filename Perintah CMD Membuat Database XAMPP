@@ -1,0 +1,4 @@
+cd C:\xampp\mysql\bin  = untuk mengakses xampp di cmd
+mysql -u root -p = untuk membuka sql
+SHOW DATABASES;  = untuk menampilkan database yg sudah ada
+CREATE DATABASES db_akademik = untuk membuat databases
