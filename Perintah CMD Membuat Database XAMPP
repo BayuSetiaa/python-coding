@@ -2,3 +2,7 @@ cd C:\xampp\mysql\bin  = untuk mengakses xampp di cmd
 mysql -u root -p = untuk membuka sql
 SHOW DATABASES;  = untuk menampilkan database yg sudah ada
 CREATE DATABASES db_akademik = untuk membuat databases
+SHOW TABLES; = untuk melihat table
+CREATE TABLE tb_mhs(   = untuk membuat table
+lanjutan no 6 isi table nya = npm INT(15) NOT NULL PRIMARY KEY,
+dst
