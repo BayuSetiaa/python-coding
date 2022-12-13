@@ -33,3 +33,55 @@ def create(database):
     print('{} data berhasil disimpan'.format(cursor.rowcount))
 
 create(db)
+
+============================================
+
+import mysql.connector
+import os
+os.system("cls")
+
+
+# MEMBUAT DRIVER MYSQL
+
+db = mysql.connector.connect(
+    host = 'localhost',
+    user = 'root',
+    password = '',
+    database = 'db_akademik'
+)
+
+# if db.is_connected():
+#     print("TERKONEKSI")
+# else:
+#     print('GAGAL TERKONEKSI')
+
+# CREATE DATA
+
+def create(database):
+    npm = int(input("Masukan NPM = "))
+    nama = str(input("Masukan Nama = "))
+    jurusan = str(input("Masukan Jurusan = "))
+
+    cursor = database.cursor()
+    value = (npm,nama,jurusan)
+    sql = 'INSERT INTO tb_mhs (npm,nama,jurusan) VALUES (%s,%s,%s)'
+
+    cursor.execute(sql,value)
+    database.commit()
+    print('{} data berhasil disimpan'.format(cursor.rowcount))
+
+#create(db)
+
+# UNTUK MENAMPILKAN DATA
+def read(db):
+    cursor = db.cursor()
+    sql = 'SELECT * FROM tb_mhs'
+    cursor.execute(sql)
+    r = cursor.fetchall()
+    if cursor.rowcount == 0:
+        print('data tidak ada')
+    else:
+        for data in r:
+            print(data)
+
+read(db)
