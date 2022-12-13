@@ -63,3 +63,5 @@ MariaDB [db_akademik]> DESC tb_mhs;
 3 rows in set (0.01 sec)
 
 MariaDB [db_akademik]>
+
+FLASK PYTHON = untuk VE
