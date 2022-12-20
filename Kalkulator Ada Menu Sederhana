@@ -1,0 +1,44 @@
+import os
+os.system('cls')
+
+def menu():
+    print('_______________________')
+    print('_____PILIH OPERATOR____')
+    print('1. TAMBAH              ')
+    print('2. KURANG              ')
+    print('3. KALI                ')    
+    print('4. BAGI                ')
+    print('0. EXIT                ')
+    print('_______________________')
+
+print(23*"=")
+print("KALKULATOR SEDERHANA")
+print(23*"=")
+
+
+if __name__ == '__main__':
+    while (True):
+        menu()
+        operator = int(input("Masukan Pilihan = "))
+        angka1 = float(input("Masukan Angka Pertama = "))
+        angka2 = float(input("Masukan Angka Kedua = "))
+        if operator == 1:
+            hasil = angka1 + angka2
+            print(f'Hasilnya adalah = {hasil}')
+        elif operator == 2:
+            hasil = angka1 - angka2
+            print(f'Hasilnya adalah = {hasil}')
+        elif operator == 3:
+            hasil = angka1 * angka2
+            print(f'Hasilnya adalah = {hasil}')
+        elif operator == 4:
+            hasil = angka1 / angka2
+            print(f'Hasilnya adalah = {hasil}')
+        elif operator == 0:
+            exit()
+        else:
+            print('MENU TIDAK ADA')
+        print(26*"=")
+        print("Terima Kasih Telah Mencoba")
+        print(26*"=")
+
