@@ -1,0 +1,31 @@
+barang = []
+qty = []
+harga = []
+jumlah = []
+
+while True:
+    print('MENU')
+    print('1.Input transaksi')
+    print('2.Cetak struk')
+    print('0.Exit')
+    
+    pilih = int(input('Masukan Menu pilihan = '))
+    
+    if pilih == 1 :
+        _barang = str(input('Masukan Nama Barang = '))
+        barang.append(_barang)
+        _qty = int(input('Masukan Quantity = '))
+        qty.append(_qty)
+        _harga = int(input('Masukan Harga Barang = '))
+        harga.append(_harga)
+        jumlah.append(_qty * _harga)
+    
+    elif pilih == 2 :
+        print('Barang\tQty\tHarga Barang\tJumlah')
+        for i in range(len(barang)):
+            print(barang[i],'\t',qty[i],'\t',harga[i],'\t\t',jumlah[i])
+        print('\t\t\t\t',sum(jumlah))
+    elif pilih == 0 :
+        exit()
+    else:
+        print('Pilihan Anda Tidak terdaftar')
